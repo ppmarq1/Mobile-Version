@@ -85,6 +85,11 @@ span {
   margin-bottom: 20px;
 }
 
+.mainproject {
+  display: grid;
+  grid-column: auto;
+}
+
 .container {
   margin-top: 252px;
   display: flex;
@@ -145,16 +150,39 @@ span {
 
 .aboutme {
   margin-top: 70px;
-  background-image: url(images/header-illsutration-mobile.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.topaboutme {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  align-content: center;
+  justify-items: center;
+  padding-left: 180px;
+}
+
+.topaboutme > img {
+  margin-left: 91px;
+  margin-top: -60px;
+}
+
+.aboutme > h2 {
+  display: flex;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
 }
 
 .aboutme > p {
-  margin: auto;
   margin-top: 25px;
-  margin-bottom: 50px;
-  display: block;
+  margin-left: 35px;
+  margin-bottom: 40px;
+  margin-right: 35px;
+  display: flex;
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -163,15 +191,19 @@ span {
   line-height: 24px;
 }
 
-.aboutme > h2 {
-  font-weight: 700;
-  line-height: 52px;
-  font-size: 40px;
-  text-align: center;
-  color: #172b4d;
+.bottomaboutme {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-left: 0;
+  align-content: center;
 }
 
-.aboutme > button {
+.bottomaboutme > img {
+  margin-bottom: 45px;
+}
+
+.bottomaboutme > button {
   display: block;
   width: auto;
   margin: auto;
@@ -182,20 +214,28 @@ span {
   justify-content: space-around;
   color: #fff;
   padding: 10px;
+  margin-left: 100px;
   margin-bottom: 50px;
-  border-color: #36b37f;
 }
 
 .container button:hover {
   cursor: pointer;
-  background-color: lightgreen;
-  box-shadow: 1px 1px lightgreen;
+  background-color: #36b37f;
+}
+
+.container button:active {
+  cursor: pointer;
+  background-color: #2a8861;
 }
 
 .aboutme button:hover {
   cursor: pointer;
-  background-color: lightgreen;
-  box-shadow: 1px 1px lightgreen;
+  background-color: #36b37f;
+}
+
+.aboutme button:active {
+  cursor: pointer;
+  background-color: #2a8861;
 }
 
 .languages {
