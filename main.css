@@ -714,6 +714,36 @@
     display: none;
   }
 
+  /*button animation*/
+
+  .button-wiggle {
+    animation: wiggle 2s linear infinite;
+  }
+
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      tranform: rotate(10deg);
+    }
+    25% {
+      transfor: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(6deg);
+    }
+    35% {
+      tranform: rotate(-4deg);
+    }
+    40%, 100% {
+      transfor: rotate(0deg);
+    }
+  }
+
   /* this class belongs to desktop version */
 
 
