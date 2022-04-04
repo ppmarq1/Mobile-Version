@@ -1,17 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Setup and Mobile Version
+## Project Title: Pedro Marques Portfolio
 
 
-The 2 sections of this skeleton project has:
+## live Demo
 
-a - the toolbar
-b - the headline section
-c - "Works" section
-d - About Myself
-    - languages
-    - frameworks
-    - skills
+Feel free to check the: [Portfolio-link](https://ppmarq1.github.io/Mobile-Version/)
+  
+
+## Project Description
+
+This project has:
+- Mobile Version
+- Desktop Version
+- Animation and Transitions effects
+
 
 
 
