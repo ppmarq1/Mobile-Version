@@ -314,42 +314,42 @@
 
   .getintouch input:hover {
     cursor: pointer;
-    background-color: #36b37f;
+    background-color: #01380f;
   }
 
   .getintouch input:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .contactform button:hover {
     cursor: pointer;
-    background-color: #36b37f;
+    background-color: #01380f;
   }
 
   .contactform button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .container button:hover {
     cursor: pointer;
-    background-color: #36b37f;
+    background-color: #01380f;
   }
 
   .container button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .aboutme button:hover {
     cursor: pointer;
-    background-color: #36b37f;
+    background-color: #01380f;
   }
 
   .aboutme button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .grid-skills-items {
@@ -714,7 +714,59 @@
     display: none;
   }
 
+  /* button animation */
+
+  .button-wiggle {
+    animation: wiggle 2s linear infinite;
+  }
+
+  @keyframes wiggle {
+    0%,
+    7% {
+      transform: rotate(0);
+    }
+
+    15% {
+      transform: rotate(-15deg);
+    }
+
+    20% {
+      transform: rotate(10deg);
+    }
+
+    25% {
+      transform: rotate(-10deg);
+    }
+
+    30% {
+      transform: rotate(6deg);
+    }
+
+    35% {
+      transform: rotate(-4deg);
+    }
+
+    40%,
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
   /* this class belongs to desktop version */
+
+  .grow:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .fade {
+    opacity: 0.5;
+  }
+
+  .fade:hover {
+    opacity: 1;
+  }
 
   .active > a {
     text-decoration: none;
@@ -998,7 +1050,7 @@
 
   .getintouch input:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .contactform button:hover {
@@ -1008,7 +1060,7 @@
 
   .contactform button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .container button:hover {
@@ -1018,7 +1070,7 @@
 
   .container button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   .aboutme button:hover {
@@ -1028,7 +1080,7 @@
 
   .aboutme button:active {
     cursor: pointer;
-    background-color: #2a8861;
+    background-color: #0be252;
   }
 
   /* desktop version */
@@ -1352,6 +1404,20 @@
     padding-left: 100px;
     padding-top: 50px;
     box-sizing: border-box;
+    animation: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .bottom {
