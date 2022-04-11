@@ -11,8 +11,3 @@ document.querySelectorAll(".nav-link").forEach (n => n.addEventListener("click",
         hamburger.classList.remove("active1");
         navMenu.classList.remove("active1");
     }))
-
-
-hamburger.addEventListener('click', navMenu);
-document.querySelectorAll(".nav-link"), navMenu.classList.remove("active1");
-
