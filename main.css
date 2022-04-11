@@ -94,7 +94,7 @@
   .nav-menu {
     position: fixed;
     font-weight: 600;
-    top: 90px;
+    top: 120px;
     left: -100%;
     gap: 0;
     flex-direction: column;
