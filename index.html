@@ -9,11 +9,32 @@
   </head>
   <body>
     <!--mobile version-->
-    <header class="header">
-      <a href="#"><h4>PEDRO MARQUES</h4></a>
-      <nav><img src="images/menu.svg" alt="Menu"></nav>
-      <!--desktop version-->
+    <header>
+      <nav class="navbar">
+        <a href="#hello"><h4>PEDRO MARQUES</h4></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Hello</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutme" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>    
+    </nav>
     </header>
+    <script src="script.js"></script>
+    <!--desktop version-->
     <section class="main">
       <ul class="topheader">
         <li class="active"><a href="#">Portfolio</a></li>
@@ -37,7 +58,7 @@
          <li class="disabledimg"><a href=""><img src="images/Disabled.svg" alt="disabled"></a></li>
       </ul>
     </section>
-    <section class="mainproject">
+    <section id="portfolio" class="mainproject">
       <h2 class="mobile">My Recent <br> Works</h2>
       <h2 class="desktop">My Recent Works</h2>
         <div class="indicatorimg"><a href=""><img src="images/Indicator.svg" alt="indicator"></a></div>
@@ -116,7 +137,7 @@
         </div>
       </section>
     </section>     
-    <section class="aboutme">
+    <section id="aboutme" class="aboutme">
       <h2>About me</h2>
       <p>
         I can help you build a product , feature or website Look through
@@ -177,7 +198,7 @@
         </div>
       </div>  
     </section>
-    <section class="contactform">
+    <section id="contact" class="contactform">
       <h2 class="textform slidein">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action= "https://formspree.io/f/xayvdwna" method="Post">
         <input type="text" name="fullname" class="field" placeholder="Full name" required maxlength="30">

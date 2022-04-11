@@ -16,6 +16,10 @@
     color: #172b4d;
   }
 
+  header {
+    background-color: #fff;
+  }
+
   .desktop {
     display: none;
   }
@@ -32,6 +36,7 @@
     display: none;
   }
 
+  /*
   .header {
     box-sizing: border-box;
     display: flex;
@@ -45,12 +50,103 @@
     padding-left: 10px;
     align-content: space-between;
   }
+  */
 
-  .header > a {
+  .navbar > a {
     font-weight: 600;
     text-decoration: none;
     color: #28352f;
     width: 100%;
+  }
+
+  .navbar > li {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+
+  .hamburger.active1 .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active1 .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active1 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    font-weight: 600;
+    top: 90px;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: #fff;
+    background-image: url(images/illustration1-aboutme.svg), url(images/illustration2-aboutme.svg);
+    background-repeat: no-repeat;
+    background-position: top  right, bottom left;
+  }
+
+  .navbar {
+    min-height: 70px;
+    display: flex;
+
+    /* justify-content: space-between; */
+
+    align-items: center;
+
+    /* padding: 0 12px; */
+    text-decoration: none;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 70px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-content: space-between;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: #28352f;
+    font-size: 25px;
+  }
+
+  .nav-link:hover {
+    color: #01380f;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active1 {
+    left: 0;
   }
 
   .main {
@@ -762,6 +858,10 @@
 
   .fade {
     opacity: 0.5;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .fade:hover {
