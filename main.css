@@ -16,6 +16,10 @@
     color: #172b4d;
   }
 
+  header {
+    background-color: #fff;
+  }
+
   .desktop {
     display: none;
   }
@@ -32,9 +36,78 @@
     display: none;
   }
 
-  .header {
+  .navbar > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #28352f;
+    width: 100%;
+  }
+
+  .navbar > li {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    padding-right: 10px;
+    width: 13px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #3a4a42;
+  }
+
+  .hamburger.active1 .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active1 .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active1 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
     box-sizing: border-box;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    top: 5px;
+    color: #3a4a42;
+    left: -100%;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 40px;
+    text-align: left;
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: #fff;
+    padding-top: 130px;
+    padding-bottom: 375px;
+    background-image: url(images/AppBarCompactDark-iOS.svg);
+    background-repeat: no-repeat;
+    background-position: top 33px right -14px;
+  }
+
+  .navbar {
+    min-height: 70px;
     display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -46,11 +119,29 @@
     align-content: space-between;
   }
 
-  .header > a {
-    font-weight: 600;
+  .navbar .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
     text-decoration: none;
     color: #28352f;
-    width: 100%;
+    font-size: 25px;
+  }
+
+  .nav-link:hover {
+    color: #01380f;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active1 {
+    left: 0;
   }
 
   .main {
@@ -762,6 +853,10 @@
 
   .fade {
     opacity: 0.5;
+  }
+
+  .navbar {
+    display: none;
   }
 
   .fade:hover {
