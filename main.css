@@ -36,22 +36,6 @@
     display: none;
   }
 
-  /*
-  .header {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 70px;
-    padding-right: 10px;
-    padding-left: 10px;
-    align-content: space-between;
-  }
-  */
-
   .navbar > a {
     font-weight: 600;
     text-decoration: none;
@@ -62,6 +46,8 @@
   .navbar > li {
     list-style: none;
     text-decoration: none;
+    display: block;
+    cursor: pointer;
   }
 
   .hamburger {
@@ -71,12 +57,13 @@
 
   .bar {
     display: block;
-    width: 25px;
+    padding-right: 10px;
+    width: 13px;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: black;
+    background-color: #3a4a42;
   }
 
   .hamburger.active1 .bar:nth-child(2) {
@@ -93,30 +80,32 @@
 
   .nav-menu {
     position: fixed;
+    box-sizing: border-box;
     font-weight: 600;
-    top: 120px;
+    font-size: 32px;
+    line-height: 44px;
+    top: 5px;
+    color: #3a4a42;
     left: -100%;
     gap: 0;
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    padding-left: 40px;
+    text-align: left;
     transition: 0.3s;
     text-decoration: none;
     background-color: #fff;
-    background-image: url(images/illustration1-aboutme.svg), url(images/illustration2-aboutme.svg);
+    padding-top: 130px;
+    padding-bottom: 375px;
+    background-image: url(images/AppBarCompactDark-iOS.svg);
     background-repeat: no-repeat;
-    background-position: top  right, bottom left;
+    background-position: top 33px right -14px;
   }
 
   .navbar {
     min-height: 70px;
     display: flex;
-
-    /* justify-content: space-between; */
-
     align-items: center;
-
-    /* padding: 0 12px; */
     text-decoration: none;
     box-sizing: border-box;
     flex-direction: row;
@@ -128,6 +117,12 @@
     padding-right: 10px;
     padding-left: 10px;
     align-content: space-between;
+  }
+
+  .navbar .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
   }
 
   .nav-link {
