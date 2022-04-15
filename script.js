@@ -13,3 +13,94 @@ document.querySelectorAll(".nav-link").forEach (n => n.addEventListener("click",
 
 hamburger.addEventListener('click', navMenu);
 document.querySelectorAll(".nav-link"), navMenu.classList.remove('active1');
+
+// cards
+
+const cardsUl = document.getElementById('cardsul');
+const projects = [
+    {
+        id: 1,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+    {
+        id: 2,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+    {
+        id: 3,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+    {
+        id: 4,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+    {
+        id: 5,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+    {
+        id: 6,
+        name: 'Multi-Post Stories <br> Gain+Glory',
+        featureImage: './imagesSnapshot-port1.svg',
+        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ipsam suscipit reprehenderit corrupti possimus molestias totam,
+                      animi facere dolor laboriosam laudantium minima necessitatibus.
+                          Voluptatem sit aliquid sequi corrupti, quam numquam a. `,
+        languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+    },
+
+
+]
+
+ const projectsCards = projects.map((card) => `
+ <li>
+         <div class="project">
+          <div class="container">
+            <h2>${card.name}</h2>
+            <ul>
+${card.languages}
+            </ul>
+            <button class="grow">See Project</button>
+          </div>
+        </div>
+</li>
+
+ `).join('');
+
+ cardsUl.innerHTML += projectsCards;
+ console.log(1234567);
