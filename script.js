@@ -39,4 +39,12 @@ function Save() {
     Comment.value = Data.comment;
   }
   
-  
+  Email.addEventListener('change', () => {
+    Save();
+  });
+  Name.addEventListener('change', () => {
+    Save();
+  });
+  Comment.addEventListener('change', () => {
+    Save();
+  }); 
