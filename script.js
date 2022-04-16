@@ -204,21 +204,7 @@ ${card.languages}
 
 // checks which card is clicked
 
-const showModal=(id) => {
-    projects.find((item) => {
-        if(Number(id) === Number(item.id)){
-            return modalContent(item)
-        }
-        return undefined
-    })
-}
 
-
-const hidePopup= () =>{
-
-    popBox.innerHTML=``
-    popBox.classList.remove('class-modal')
-}
 
 
 
