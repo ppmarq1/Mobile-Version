@@ -97,9 +97,6 @@
     background-color: #fff;
     padding-top: 130px;
     padding-bottom: 375px;
-    background-image: url(images/AppBarCompactDark-iOS.svg);
-    background-repeat: no-repeat;
-    background-position: top 33px right -14px;
   }
 
   .navbar {
@@ -252,7 +249,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-image: url(images/Plaholder.svg);
+    background-image: url(images/Snapshoot-port1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border: 1px #ebf0ee solid;
     width: 100%;
     border-radius: 8px;
@@ -442,6 +441,90 @@
     cursor: pointer;
     background-color: #0be252;
   }
+
+
+
+   /* window-popup */
+
+   .pop-img1 {
+    width: 324px;
+    height: 206px;
+    margin-top: 14px;
+   }
+
+   span.close-x {
+    padding-left: 271px;
+    color: #fff;
+    display: block;
+    font-size: 31px;
+    position: absolute;
+    padding-top: 26px;
+  }
+
+   .modal-pop1 {
+    width: 300px;
+    padding: 15px;
+   }
+
+   .modal-ul-list {
+display: flex;
+margin-left: 12px;
+   }
+
+   .prg-prg {
+    width: 311px;
+    height: 244px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 17px;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+   .m-botton-ul {
+    position: absolute;
+    display: inline-flex;
+    gap: 12px;
+    margin-left: -156px;
+   }
+
+   .font-styles1 {
+    width: 327px;
+    height: 100%;
+    background-color: #fff;
+    margin-top: 12px;
+    margin-left: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+   }
+
+   
+  .w-popup {
+
+    display: none;
+    height: 154%;
+    width: 100%;
+    text-align: center;
+position: fixed;
+left: 0px;
+top: 0px;
+bottom: 0;
+right: 0;
+background-color: rgba(193, 199, 208, 4);
+backdrop-filter: blur(4px);
+  }
+
+
+  .class-modal {
+    display: block;
+  }
+
 
   .grid-skills-items {
     row-gap: 32px;
@@ -782,6 +865,13 @@
     margin-left: 3px;
     margin-right: 3px;
   }
+
+  
+
+
+  .dk {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -789,6 +879,88 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+
+  /* window-popup */
+
+  .font-styles1 {
+    width: 69%;
+    height: 898px;
+    background: #fff;
+    margin-left: 184px;
+    margin-right: 260px;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  img.pop-img1 {
+    width: 860px;
+    align-items: center;
+    padding-left: 26px;
+    padding-top: 30px;
+    }
+
+    .modal-pop1 {
+      padding-left: 24px;
+      width: 300px;
+    }
+
+    .modal-ul-list {
+      display: inline-flex;
+      gap: 12px;
+      margin-left: 24px;
+      margin-bottom: 8px;
+    }
+
+    .prg-prg {
+      margin-left: 24px;
+      margin-top: 30px;
+    }
+
+    .mb {
+      display: none;
+    }
+
+    .m-botton-ul {
+      position: absolute;
+      display: inline-flex;
+      margin-bottom: 38px;
+      gap: 12px;
+      padding-left: 118px;
+      top: 647px;
+      bottom: 24px;
+      left: 444px;
+      right: 0;
+    
+    }
+
+  .w-popup {
+    display: none;
+    height: 154%;
+    width: 100%;
+    position: absolute;
+left: 0px;
+top: 0px;
+bottom: 0;
+right: 0;
+background-color: #C1C7D0;
+
+
+  }
+
+  
+  .class-modal {
+    display: block;
+  }
+
+  span.close-x {
+    padding-left: 789px;
+    position: absolute;
+    margin-top: 89px;
+    width: 7px;
+    color: #fff;
+    font-size: 59px;
   }
 
   body {
@@ -982,6 +1154,14 @@
     margin: 0 auto;
   }
 
+.ul-class-list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: auto auto auto;
+
+
+}
+
   .grid-project {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -997,7 +1177,9 @@
     margin: auto;
     flex-direction: column;
     align-items: flex-end;
-    background-image: url(images/Plaholder.svg);
+    background-image: url(images/Snapshoot-port1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border: 1px #ebf0ee solid;
     width: 327px;
     height: 474px;
@@ -1177,6 +1359,11 @@
     cursor: pointer;
     background-color: #0be252;
   }
+
+/*popup window */
+
+
+
 
   /* desktop version */
 
