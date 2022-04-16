@@ -852,8 +852,6 @@
     gap: 8px;
   }
 
-
-
   .class-modal {
     display: block;
   }
@@ -1626,7 +1624,6 @@
     border-radius: 16px;
   }
 
-
   .cards-lang-btn {
     display: flex;
     flex-direction: row;
@@ -1676,7 +1673,6 @@
     display: flex;
     justify-content: center;
   }
-
 
   span.close-x {
     right: 7%;
