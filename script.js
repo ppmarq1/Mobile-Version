@@ -16,7 +16,9 @@ document.querySelectorAll(".nav-link"), navMenu.classList.remove('active1');
 
 // cards
 
-const cardsUl = document.getElementById('cardsul');
+const cardsBoxUl = document.getElementById('ulBox');
+
+
 const projects = [
     {
         id: 1,
@@ -166,22 +168,25 @@ const projects = [
 ]
 
  const projectsCards = projects.map((card) => `
- <li>
-         <div class="project">
-          <div class="container">
-            <h2>${card.name}</h2>
-            <ul class="cards-lang-btn">
 
-${card.languages.map((lang)=> `<li class="lang">${lang}</li>`).join('')}
-            </ul>
-            <button class="grow" onclick="showModal(${card.id})">See Project</button>
-          </div>
-        </div>
-</li>
+<div class="project">
+<div class="container">
+  <h2>${card.name}</h2>
 
- `).join('');
+  <ul>
+${card.languages.map((lang)=> `<li>${lang}</li>`).join('')}
+   
+  </ul>
+  <button class="grow" onclick="showModal(${card.id})">See Project</button>
 
- cardsUl.innerHTML += projectsCards;
+</div>
+</div>
+
+ `
+ 
+ ).join('');
+ cardsBoxUl.innerHTML += projectsCards;
+
 
 
  //Pop data 
@@ -195,7 +200,7 @@ ${card.languages.map((lang)=> `<li class="lang">${lang}</li>`).join('')}
 
       
      <span class="close-x" onclick="hidePopup()">&times;</span>
-     <div class="cont">
+     <div class="pop-image">
         <img class="pop-img1" src="./images/Snapshoot-port1.svg" alt="">
      </div>
      <h3 class="modal-pop1">${card.name2}</h3>
