@@ -275,9 +275,10 @@
     <section id="contact" class="contactform">
       <h2 class="textform slidein">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action= "https://formspree.io/f/xayvdwna" method="Post">
-        <input type="text" name="fullname" class="field" placeholder="Full name" required maxlength="30">
-        <input type="email" name="email" class="field" placeholder="Email address" required >
-        <textarea name="message" class="text" placeholder="Typing something" required maxlength="500"></textarea>
+        <input type="text" id="name" name="fullname" class="field" placeholder="Full name" required maxlength="30">
+        <input type="email" id="email" name="email" class="field" placeholder="Email address" required >
+        <textarea name="message" id="comment" class="text" placeholder="Typing something" required maxlength="500"></textarea>
+        <kbd class="ErrorMessage" ></kbd>
         <button class="getintouch" type="submit" value="Submit">Get in touch</button>
       </form>
       <ul class="bottom">
