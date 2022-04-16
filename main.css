@@ -250,6 +250,8 @@
     flex-direction: column;
     align-items: flex-end;
     background-image: url(images/Snapshoot-port1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border: 1px #ebf0ee solid;
     width: 100%;
     border-radius: 8px;
@@ -442,9 +444,7 @@
 
   * modal popup window */
 
-  .modalcontainer .dk {
-    display: none;
-  }
+
   
   .modal-img-dk {
     display: none;
@@ -518,9 +518,10 @@
     color: #172b4d;
     font-weight: 600;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 39px;
     margin-bottom: 16px;
-    padding-left: 15px;
+    margin-top: -18px;
+    padding-left: -6px;
   }
   
   .modal-main {
@@ -533,20 +534,13 @@
     row-gap: 20px;
    }
   
-  .modal-img-mb {
-    margin-bottom: 16px;
-    position: relative;
-    box-sizing: border-box;
-    clear: both;
-  }
   
   .modalcontainer {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     border: 1px #ccc solid;
     border-radius: 8px;
-    width: 100%;
+    width: 81%;
     border: none;
     box-sizing: border-box;
   }
@@ -564,12 +558,12 @@
     flex-direction: row;
     margin: auto;
     column-gap: 5px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
   }
   
   .modalcontainer > ul > li {
     color: #3a4a42;
-    margin-top: 18px;
+    margin-top: -29px;
     font-weight: 600;
     font-size: 10px;
     height: 10%;
@@ -581,7 +575,7 @@
     border-radius: 8px;
     align-content: center;
     padding: 17px;
-    padding-bottom: 28px;
+    padding-bottom: 17px;
     margin-bottom: 20px;
   }
   
@@ -593,7 +587,8 @@
     list-style: none;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 126px;
+    margin-left: -22px;
+    padding-bottom: 171px;
   }
 
 
@@ -937,6 +932,60 @@
     margin-left: 3px;
     margin-right: 3px;
   }
+
+  
+  .w-popup {
+    height: 154%;
+    width: 100%;
+    
+position: fixed;
+left: 0px;
+top: 0px;
+bottom: 0;
+right: 0;
+background-color: rgba(193, 199, 208, 4);
+backdrop-filter: blur(4px);
+
+
+  }
+
+  span.close-x {
+    padding-left: 298px;
+    color: #fff;
+    display: block;
+    font-size: 31px;
+    position: absolute;
+    padding-top: 31px;
+  }
+
+  .font-style {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 789px;
+    margin-top: 26px;
+    width: 351px;
+    overflow: scroll;
+    margin-bottom: 20px;
+    margin-left: 18px;
+  }
+
+  .prg-prg {
+    width: 311px;
+height: 244px;
+left: 0px;
+top: 0px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+margin-top: -28px;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+  }
+
+  .dk {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -944,6 +993,34 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  
+  .modal-img-mb {
+    box-sizing: border-box;
+    clear: both;
+    margin-top: -10px;
+  }
+
+  
+
+  .w-popup {
+    height: 154%;
+    width: 100%;
+    position: absolute;
+left: 0px;
+top: 0px;
+bottom: 0;
+right: 0;
+background-color: #C1C7D0;
+
+
+  }
+
+  span.close-x {
+    padding-left: 945px;
+    position: absolute;
+    margin-top: 156px;
   }
 
   body {
@@ -1161,6 +1238,8 @@
     flex-direction: column;
     align-items: flex-end;
     background-image: url(images/Snapshoot-port1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border: 1px #ebf0ee solid;
     width: 327px;
     height: 474px;
@@ -1340,6 +1419,184 @@
     cursor: pointer;
     background-color: #0be252;
   }
+
+/*popup window */
+
+.modalcross span {
+  height: 2px;
+  width: 12px;
+  border-radius: 8px;
+  background: #67798e;
+  position: absolute;
+}
+
+.mb-menu span:nth-child(1) {
+  top: 10px;
+  transform-origin: left center;
+}
+
+.mb-menu span:nth-child(2) {
+  top: 20px;
+  transform-origin: left center;
+}
+
+.mb-menu span:nth-child(3) {
+  top: 30px;
+  transform-origin: left center;
+}
+
+.modal-d {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .modal-d > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #344563;
+    box-sizing: border-box;
+    margin-left: 16px;
+  }
+  
+  .modal-title-mb {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 16px;
+    width: 500px;
+    margin-left: -179px;
+    /* box-sizing: border-box; */
+       
+  }
+  
+  .modal-main {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-bottom: 130px;
+    width: 920px;
+    height: 1033px;
+    }
+   .font-style {
+     width: 80%;
+     height: 100%;
+   }
+
+  .modal-img-mb {
+    display: flex;
+    width: 872px;
+    height: 616px;
+    border: 1px solid #DFE1E6;
+    border-radius: 8px;
+    margin-left: 60px;
+  }
+  
+  .popup-mb {
+    display: none;
+  }
+
+  .modalcontainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    margin-left: 200px;
+    box-sizing: border-box;
+  }
+  
+  .modalcontainer > h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 15px;
+    color: #3a4a42;
+  }
+  
+  .modalcontainer ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    column-gap: 5px;
+    margin-left: 5px;
+  }
+  
+  .modalcontainer .mb {
+    display: none;
+  }
+
+
+  
+  .modalcontainer .dk {
+    color: #3a4a42;
+   
+    font-weight: 600;
+    font-size: 10px;
+    height: 10%;
+    text-align: center;
+    line-height: 13px;
+    justify-items: center;
+    background-color: #ebf0ee;
+    justify-content: space-around;
+    border-radius: 8px;
+    align-content: center;
+    padding: 17px;
+    padding-bottom: 28px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  
+  .container-bottom-dk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 200px;
+    margin-bottom: 126px;
+  }
+
+  .container-bottom-mb {
+    display: none;
+  }
+
+  .modal-main > p {
+   font-size: 16px;
+   line-height: 30px;
+   font-weight: 400px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   margin-left: 200px;
+   padding-left: 40px;
+  }
+
+  .bottom-align-dk {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-left: 250px;
+    column-gap: 70px ;
+    width: 100%;
+    align-content: space-between;
+    }
+
+
+
+
+
 
   /* desktop version */
 
