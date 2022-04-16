@@ -21,6 +21,7 @@ const projects = [
     {
         id: 1,
         name: 'Multi-Post Stories <br> Gain+Glory',
+        name2: 'Keeping track of hundreds of components',
         featureImage: './imagesSnapshot-port1.svg',
         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Ipsam suscipit reprehenderit corrupti possimus molestias totam,
@@ -34,6 +35,8 @@ const projects = [
                           Numquam autem ipsam exercitationem corrupti quas pariatur
                           voluptas reprehenderit,!`,
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -41,6 +44,8 @@ const projects = [
     {
         id: 2,
         name: 'Multi-Post Stories <br> Gain+Glory',
+        name2: 'Keeping track of hundreds of components',
+
         featureImage: './imagesSnapshot-port1.svg',
         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Ipsam suscipit reprehenderit corrupti possimus molestias totam,
@@ -55,6 +60,8 @@ const projects = [
                           voluptas reprehenderit,!`,
 
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -75,6 +82,10 @@ const projects = [
         Numquam autem ipsam exercitationem corrupti quas pariatur
         voluptas reprehenderit,!`,
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        name2: 'Keeping track of hundreds of components',
+
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -95,6 +106,10 @@ const projects = [
                           Numquam autem ipsam exercitationem corrupti quas pariatur
                           voluptas reprehenderit,!`,
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        name2: 'Keeping track of hundreds of components',
+
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -102,6 +117,8 @@ const projects = [
     {
         id: 5,
         name: 'Multi-Post Stories <br> Gain+Glory',
+        name2: 'Keeping track of hundreds of components',
+
         featureImage: './imagesSnapshot-port1.svg',
         description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Ipsam suscipit reprehenderit corrupti possimus molestias totam,
@@ -115,6 +132,8 @@ const projects = [
                           Numquam autem ipsam exercitationem corrupti quas pariatur
                           voluptas reprehenderit,!`,
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -134,7 +153,11 @@ const projects = [
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                           Numquam autem ipsam exercitationem corrupti quas pariatur
                           voluptas reprehenderit,!`,
+        name2: 'Keeping track of hundreds of components',
+
         languages: ['Ruby on rails', 'CSS', 'JavaScript', 'HTML'],
+        languages2: ['CodeKit', 'GitHub', 'JavaScript','Bootstrap', 'Terminal','Codepen'],
+
         seelive: `https://www.google.com`,
         seesource: `https://www.google.com`,
     },
@@ -147,8 +170,9 @@ const projects = [
          <div class="project">
           <div class="container">
             <h2>${card.name}</h2>
-            <ul>
-${card.languages}
+            <ul class="cards-lang-btn">
+
+${card.languages.map((lang)=> `<li class="lang">${lang}</li>`).join('')}
             </ul>
             <button class="grow" onclick="showModal(${card.id})">See Project</button>
           </div>
@@ -174,19 +198,12 @@ ${card.languages}
      <div class="cont">
         <img class="pop-img1" src="./images/Snapshoot-port1.svg" alt="">
      </div>
-     <h3 class="modal-pop1">${card.name}</h3>
+     <h3 class="modal-pop1">${card.name2}</h3>
 
-     <ul class="modal-ul-list">
-       <li class="mb">Ruby on rails</li>
-       <li class="mb">CSS</li>
-       <li class="mb">JavaScript</li>
-       <li class="dk">Codekit</li>
-       <li class="dk">GitHub</li>
-       <li class="dk">Javascript</li>
-       <li class="dk">Bootstrap</li>
-       <li class="dk">Terminal</li>
-       <li class="dk">Kodepen</li>
-     </ul>
+     <ul class="cards-lang-btn">
+
+${card.languages2.map((lang)=> `<li class="lang">${lang}</li>`).join('')}
+            </ul>
 
      <p class="prg-prg">${card.description2}</p>
 
@@ -204,17 +221,21 @@ ${card.languages}
 
 // checks which card is clicked
 
+const showModal=(id) => {
+    projects.find((item) => {
+        if(Number(id) === Number(item.id)){
+            return modalContent(item)
+        }
+        return undefined
+    })
+}
 
 
+const hidePopup= () =>{
 
-
-
-
-
-
-
-
-
+    popBox.innerHTML=``
+    popBox.classList.remove('class-modal')
+}
 
 
 //contact form validation//

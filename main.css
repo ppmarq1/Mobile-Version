@@ -286,7 +286,7 @@
     color: #3a4a42;
   }
 
-  .container ul {
+  .cards-lang-btn {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -294,7 +294,7 @@
     margin-left: 5px;
   }
 
-  .container > ul > li {
+  .cards-lang-btn .lang {
     color: #3a4a42;
     margin-top: 18px;
     font-weight: 600;
@@ -307,9 +307,7 @@
     justify-content: space-around;
     border-radius: 8px;
     align-content: center;
-    padding: 17px;
-    padding-bottom: 28px;
-    margin-bottom: 20px;
+    padding: 8px 12pxpx;
   }
 
   .container > button {
@@ -441,6 +439,7 @@
     cursor: pointer;
     background-color: #0be252;
   }
+
 
 
 
@@ -1165,6 +1164,7 @@
   .ul-class-list {
     display: grid;
     list-style: none;
+    gap: 14px;
     grid-template-columns: auto auto auto;
   }
 
@@ -1212,7 +1212,7 @@
     color: #3a4a42;
   }
 
-  .container ul {
+  .cards-lang-btn {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -1220,7 +1220,7 @@
     margin-left: 5px;
   }
 
-  .container > ul > li {
+  .cards-lang-btn .lang {
     color: #3a4a42;
     margin-top: 18px;
     font-weight: 600;
@@ -1233,7 +1233,7 @@
     justify-content: space-around;
     border-radius: 8px;
     align-content: center;
-    padding: 17px;
+    padding: 8px 12px;
     padding-bottom: 28px;
     margin-bottom: 20px;
   }
